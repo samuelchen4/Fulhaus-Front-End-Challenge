@@ -1,6 +1,6 @@
 # Fulhaus-Front-End-Challenge
 
-Frontend for an item display page and checkout cart. Can add and remove items from shopping cart. The total is calculated by the item prices and quantities of each item. **_To run application_**, clone this repo and type "npm start" in console for directory where project is cloned.
+Frontend for an item display page and checkout cart. Can add and remove items from shopping cart. The total is calculated by the item prices and quantities of each item. **_To run application_** clone this repo, install all dependencies with _"npm install"_, and start application with _"npm start"_.
 
 Built responsively for Desktop and Mobile view.
 
