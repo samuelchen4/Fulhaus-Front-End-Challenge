@@ -26,29 +26,31 @@ const CheckoutModal = ({ setIsOpen }) => {
   };
 
   return (
-    <div className='bg-neutral absolute inset-x-0 lg:w-96 lg:right-0 px-8 mt-3'>
-      <h2 className='text-3xl mt-3 mb-6'>My Order</h2>
-      <div className='max-h-65vh overflow-y-auto mb-6'>
-        {checkoutList.length ? (
-          checkoutList.map((product) => {
-            return <CheckoutTile key={product._id} product={product} />;
-          })
-        ) : (
-          <p>nothing in cart!</p>
-        )}
-      </div>
-      <section>
-        <div className='flex justify-between text-3xl mb-3'>
-          <p>Total</p>
-          <p>${total}</p>
+    <div className='bg-neutral fixed w-screen mt-3 lg:w-2/5 lg:right-0'>
+      <div className='mx-8 my-4'>
+        <h2 className='text-3xl mb-6'>My Order</h2>
+        <div className='max-h-65vh overflow-y-auto mb-6'>
+          {checkoutList.length ? (
+            checkoutList.map((product) => {
+              return <CheckoutTile key={product._id} product={product} />;
+            })
+          ) : (
+            <p>nothing in cart!</p>
+          )}
         </div>
-        <button
-          className='absolute inset-x-0 w-full py-2 px-6 border bg-black text-white tracking-wide'
-          onClick={handleCheckout}
-        >
-          Checkout
-        </button>
-      </section>
+        <section>
+          <div className='flex justify-between text-3xl'>
+            <p>Total</p>
+            <p>${total}</p>
+          </div>
+          <button
+            className='absolute inset-x-0 w-full py-2 px-6 border bg-black text-white tracking-wide'
+            onClick={handleCheckout}
+          >
+            Checkout
+          </button>
+        </section>
+      </div>
     </div>
   );
 };
