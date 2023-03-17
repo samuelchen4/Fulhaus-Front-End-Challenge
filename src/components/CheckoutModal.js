@@ -28,7 +28,7 @@ const CheckoutModal = ({ setIsOpen }) => {
   return (
     <div className='bg-neutral fixed w-screen mt-3 lg:w-2/5 lg:right-0'>
       <div className='mx-8 my-4'>
-        <h2 className='text-3xl mb-6'>My Order</h2>
+        <h2 className='text-3xl mb-6 font-bold'>My Order</h2>
         <div className='max-h-65vh overflow-y-auto mb-6'>
           {checkoutList.length ? (
             checkoutList.map((product) => {
@@ -39,7 +39,7 @@ const CheckoutModal = ({ setIsOpen }) => {
           )}
         </div>
         <section>
-          <div className='flex justify-between text-3xl'>
+          <div className='flex justify-between text-3xl font-bold'>
             <p>Total</p>
             <p>${total}</p>
           </div>

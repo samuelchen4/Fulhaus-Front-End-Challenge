@@ -11,7 +11,7 @@ const CheckoutTile = ({ product }) => {
   };
 
   return (
-    <div className='flex mb-3 max-w-lg border m-auto'>
+    <div className='flex mb-3 max-w-lg m-auto'>
       <div className='h-[200px] w-[200px]'>
         <img
           src={product.image}
@@ -28,7 +28,7 @@ const CheckoutTile = ({ product }) => {
           </p>
         </div>
         <div className='flex justify-between'>
-          <p className='text-grey'>{product.price}</p>
+          <p className='text-gray-500'>${product.price}</p>
           <p>x{product.qty}</p>
         </div>
       </div>

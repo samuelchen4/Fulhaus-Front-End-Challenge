@@ -13,7 +13,7 @@ export const Product = ({ product }) => {
   };
 
   return (
-    <div className='min-h-[600px] lg:min-h-0 inline-block bg-gray-100 flex flex-col border rounded-md max-h-96'>
+    <div className='min-h-[600px] lg:min-h-0 inline-block bg-gray-100 flex flex-col border rounded-md max-h-100'>
       <section className='h-4/6 mb-2'>
         <img src={product.imageURLs[0]} className='w-full h-full' />
       </section>
@@ -26,7 +26,7 @@ export const Product = ({ product }) => {
           <FontAwesomeIcon icon={faStar} className='text-yellow-300' />
           <FontAwesomeIcon icon={faStar} className='text-yellow-300' />
         </p>
-        <div className='flex justify-between mb-2 mt-auto'>
+        <div className='flex justify-between mt-auto'>
           <p className='font-bold'>${product.retailPrice}</p>
           <button onClick={onClickHandler}>
             <FontAwesomeIcon
