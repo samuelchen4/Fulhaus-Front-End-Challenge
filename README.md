@@ -1,6 +1,6 @@
 # Fulhaus-Front-End-Challenge
 
-Frontend for an item display page and checkout cart. Can add and remove items from shopping cart. The total is calculated by the item prices and quantities of each item. **_To run application_** clone this repo, install all dependencies with _"npm install"_, and start application with _"npm start"_.
+Frontend for an item display page and checkout cart. Can add and remove items from shopping cart. The total is calculated by the item prices and quantities of each item.
 
 Built responsively for Desktop and Mobile view.
 
@@ -10,6 +10,14 @@ Built with:
 - **_Redux_** to manage state
 - **_Axios_** to preform HTTP requests
 - **_Tailwind_** for styling
+
+## How to Start
+
+### Steps:
+
+1. Clone git repo
+2. type in terminal **_npm install_** to download all dependencies
+3. type in terminal **_npm start_** to start application
 
 ## Redux State Management
 
